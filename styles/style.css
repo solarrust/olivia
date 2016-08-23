@@ -311,6 +311,7 @@ header {
 
 .slide-nav li.active a {
   background-color: #a62ad7;
+  cursor: default;
 }
 
 .slide-nav a {
@@ -319,4 +320,73 @@ header {
   height: 100%;
   border: 1px solid #a62ad7;
   border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.slide-nav a:hover {
+  background-color: #a62ad7;
+}
+
+.testimonial {
+  padding: 130px 0 50px;
+}
+
+.testimonial-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  max-width: 195px;
+  max-height: 195px;
+}
+
+.mention {
+  max-width: 770px;
+  quotes: "\201c" "\201e";
+}
+
+blockquote:before {
+  font-family: Times, serif;
+  content: open-quote;
+  font-size: 60px;
+  margin-left: -30px;
+}
+
+blockquote:after {
+  font-family: Times, serif;
+  content: close-quote;
+  font-size: 60px;
+  margin-left: 30px;
+  line-height: 16px;
+}
+
+address {
+  margin-top: 45px;
+  font-style: normal;
+}
+
+address span {
+  display: block;
+  line-height: 30px;
+}
+
+address .name {
+  font-size: 18px;
+}
+
+.testimonial .slide-nav a{
+  border-color: #fff;
+}
+
+.testimonial .slide-nav .active a{
+  background-color: #fff;
+}
+
+.testimonial .slide-nav a:hover {
+  background-color: #fff;
 }
