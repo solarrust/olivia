@@ -122,6 +122,7 @@ header {
   text-align: center;
   background: url(../images/bg2.jpg) no-repeat top center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .features .wrapp {
@@ -191,6 +192,7 @@ header {
 
 .check {
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .check .wrapp {
@@ -247,4 +249,74 @@ header {
   position: absolute;
   right: 0;
   width: 45%;
+}
+
+.screenshots {
+  padding: 120px 0;
+  background: url(../images/bg3.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-title.light {
+  font-size: 48px;
+  font-weight: 400;
+  color: #3b434d;
+}
+
+.screen-group {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.screen-item {
+  position: relative;
+}
+
+.screen-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(../images/hover-screen.png) no-repeat center;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.screen-item:hover:after {
+  opacity: 1;
+}
+
+.slide-nav {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.slide-nav li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.slide-nav li.active a {
+  background-color: #a62ad7;
+}
+
+.slide-nav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #a62ad7;
+  border-radius: 50%;
 }
