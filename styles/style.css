@@ -6,8 +6,13 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: Open Sans, sans-serif;
   color: #fff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .wrapp {
@@ -89,8 +94,6 @@ header {
 
 .title-group p {
   margin: 50px 0;
-  font-size: 16px;
-  line-height: 30px;
 }
 
 .title-group h3 {
@@ -112,4 +115,74 @@ header {
 
 .title-group a:last-of-type {
   background: url(../images/google-play.png) no-repeat center;
+}
+
+.features {
+  color: #3b434d;
+  text-align: center;
+  background: url(../images/bg2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.features .wrapp {
+  flex-direction: column;
+  padding: 125px 0;
+}
+
+.section-title {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-description {
+  margin: 40px 0;
+}
+
+.list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.list-item {
+  padding: 40px;
+}
+
+.list-item i {
+  width: 100%;
+  height: 130px;
+  display: block;
+  transition: all 0.5s;
+}
+
+.list-item:first-child i {
+  background: url(../images/full_n.png) no-repeat center;
+}
+
+.list-item:hover:first-child i {
+  background: url(../images/full_hover.png) no-repeat center;
+}
+
+.list-item:nth-child(2) i {
+  background: url(../images/listen_n.png) no-repeat center;
+}
+
+.list-item:hover:nth-child(2) i {
+  background: url(../images/listen_hover.png) no-repeat center;
+}
+
+.list-item:last-child i {
+  background: url(../images/image_g.png) no-repeat center;
+}
+
+.list-item:hover:last-child i {
+  background: url(../images/image_g_hover.png) no-repeat center;
+}
+
+.list-item h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 30px 0;
 }
