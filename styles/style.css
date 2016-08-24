@@ -390,3 +390,154 @@ address .name {
 .testimonial .slide-nav a:hover {
   background-color: #fff;
 }
+
+
+.ask {
+  color: #3b434d;
+  padding: 140px 0;
+}
+
+.contacts {
+  text-align: center;
+  font-size: 27px;
+  margin: 50px 0;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.peoples {
+  flex-wrap: wrap;
+}
+
+.people-item {
+   width: 45%;
+   padding: 50px 0;
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row-reverse;
+   padding-right: 0;
+   justify-content: space-between;
+}
+
+.people-item:nth-child(odd) {
+  text-align: right;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.people-item .name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.people-item .work::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid;
+  margin: 15px 0;
+}
+
+.social-links {
+  display: block;
+  margin: 25px 0;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links li a {
+  display: inline-block;
+  opacity: 0.7;
+  width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  background: url(../images/social-links.png) no-repeat center;
+  transition: all 0.5s;
+}
+
+.social-links li a:hover {
+  background: url(../images/social-links-hover.png) no-repeat center;
+  opacity: 1;
+}
+
+.social-links li:first-child a{
+  background-position: 5px;
+}
+
+.social-links li:nth-child(2) a{
+  background-position: -20px;
+}
+
+.social-links li:nth-child(3) a{
+  background-position: -52px;
+}
+
+.social-links li:nth-child(4) a{
+  background-position: -90px;
+}
+
+.social-links li:nth-child(5) a{
+  background-position: -121px;
+}
+
+.social-links li:last-child a{
+  background-position: -155px;
+}
+
+.face {
+  max-width: 165px;
+  max-height: 165px;
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+  background: linear-gradient(to right, #b259e1, #778df0);
+  margin-right: 10px;
+}
+
+.people-item:nth-child(odd) .face {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.face:hover{
+  animation: gradient 0.8s infinite linear;
+}
+
+@keyframes gradient {
+  from {
+    background: linear-gradient(to right, #b259e1, #778df0);
+  }
+
+  12.5% {
+    background: linear-gradient(to bottom right, #b259e1, #778df0);
+  }
+
+  25% {
+    background: linear-gradient(to bottom, #b259e1, #778df0);
+  }
+
+  37.5% {
+    background: linear-gradient(to bottom left, #b259e1, #778df0);
+  }
+
+  50% {
+    background: linear-gradient(to left, #b259e1, #778df0);
+  }
+
+  62.5% {
+    background: linear-gradient(to top left, #b259e1, #778df0);
+  }
+
+  75% {
+    background: linear-gradient(to top, #b259e1, #778df0);
+  }
+
+  to {
+    background: linear-gradient(to top right, #b259e1, #778df0);
+  }
+}
